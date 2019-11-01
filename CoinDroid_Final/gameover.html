@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/popupbut.css">
+		<title>Game</title>
+		<style>
+			body {
+				background: #0099F7; /* fallback for old browsers */
+				background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to left, #0099F7 , #F11712); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			}
+			#scoreboard {
+				text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+        font-size: large;
+        font: 30px arial, sans-serif;
+        font-weight: bold;
+				color: white;
+			}
+			#scores {
+				font-size:600%;
+				padding:0;
+				margin:0;
+				color: white;
+			}
+			#title {
+				color: white;
+			}
+			#play {
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src='js/main.js'></script>
+
+		<audio id = "sound">
+			<source src="lost.mp3" type="audio/ogg">
+			Your browser does not support the audio element.
+		</audio>
+		<script>
+			var audio1 = document.getElementById("sound");
+			audio1.play();
+		</script>
+		<span id="logout_span"></span>
+		<div id='scoreboard'>
+			<h2 id='winnerBoard'>YOU LOST :(</h2>
+			<h2 id='play'> <a href = 'main.html' >TRY THIS LEVEL AGAIN</a> </h2>
+			<h2 id='play'> <a href = 'start.html' >GO BACK TO MAIN MENU</a> </h2>
+		</div>
+	</body>
+
+</html>
